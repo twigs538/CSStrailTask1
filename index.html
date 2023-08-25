@@ -39,15 +39,6 @@
     margin: 0 auto;
   }
 
-  @keyframes buttonHover {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(1.1);
-    }
-  }
-
   .button {
     background-color: var(--primary-color);
     color: white;
@@ -55,7 +46,11 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    animation: buttonHover 0.3s ease-in-out alternate-reverse infinite;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
   }
 
   @media screen and (min-width: 768px) {
@@ -70,15 +65,15 @@
     }
   }
 </style>
-<title>Responsive Animated Webpage</title>
+<title>Coding Allstar</title>
 </head>
 <body>
   <header>
-    <h1>Coding Allstars</h1>
+    <h1>Coding Allstar</h1>
   </header>
   <div class="container">
     <main>
-      <h2>Welcome to Coding Allstars</h2>
+      <h2>Welcome to My Page</h2>
       <p>This is the main content of the webpage.</p>
       <button class="button">Hover Me</button>
     </main>
@@ -88,7 +83,7 @@
     </aside>
   </div>
   <footer>
-    <p>&copy; 2023 Coding Allstars. All rights reserved.</p>
+    <p>&copy; 2023 Coding Allstar. All rights reserved.</p>
   </footer>
 </body>
 </html>
